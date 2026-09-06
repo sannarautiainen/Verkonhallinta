@@ -7,6 +7,7 @@ Tämän dokumentaation tarkoituksena on osoittaa miten kurssin verkkoympäristö
 
 ## 3. Laiteluettelo
 | Laite | Tarkoitus |
+| ----- | --------- |
 | r1 | Reititin 1, yhdistää käyttäjäverkon muuhun verkkoon. |
 | r2 | Reititin 2, yhdistää muut reitittimet + palvelin- ja hallintaverkot |
 | r3 | Reititin 3, yhdistää muun verkon haarakonttorin verkkoon |
@@ -21,6 +22,7 @@ Tämän dokumentaation tarkoituksena on osoittaa miten kurssin verkkoympäristö
 | zabbix | Työkalu/palvelu jolla voidaan monitoroida verkkoa ja palveluita |
 ## 4. IP-suunnitelma
 | Verkko | Tarkoitus | Yhdyskäytävä |
+| ------ | --------- | ------------ |
 | 10.10.10.0/24 | Käyttäjäverkko, jossa sijaitsee r1, client1 ja attacker | 10.10.10.1/24 (reititin 1) |
 | 10.10.20.0/24 | Serveriverkko, jossa sijaitsee r2, web1 ja db1 | 10.10.20.1 (reititin 2) |
 | 10.10.30.0/24 | Haarakonttorin verkko, jossa sijaitsee r3 ja branch-client | 10.10.30.1 (reititin 3) |
