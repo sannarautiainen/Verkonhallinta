@@ -66,10 +66,10 @@ for node in "${NODES[@]}"; do
     sort -u /root/.ssh/authorized_keys -o /root/.ssh/authorized_keys
   " 2>/dev/null; then
     echo "✓"
-    ((SUCCESS++))
+    SUCCESS=$((SUCCESS + 1))
   else
     echo "✗ failed"
-    ((FAILED++))
+    FAILED=$((FAILED + 1))
   fi
 done
 

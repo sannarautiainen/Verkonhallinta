@@ -1,6 +1,6 @@
 ---
 - name: Install Prometheus Node Exporter
-  hosts: ubuntu_hosts
+  hosts: web1,db1
   become: true
 
   vars:
